@@ -1,12 +1,59 @@
-# React + Vite
+# 🎬 Movie Explorer Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend client for the **Movie Explorer** application, built with React and styled using TailwindCSS.
 
-Currently, two official plugins are available:
+## 📦 Tech Stack
+- **React** (with Vite)
+- **React Router DOM**
+- **Zustand** for state management
+- **TailwindCSS**
+- **Axios** for HTTP requests
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18+)
+- Yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Setup
+
+```bash
+cd movie-explorer-frontend
+yarn install
+yarn dev
+```
+
+Frontend runs at `http://localhost:5173`.
+
+## 📁 Structure
+
+```
+movie-explorer-frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── layout/
+│   ├── pages/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+```
+
+## ✨ Features
+- Movie search using TMDB API
+- View movie details
+- User notes for each movie
+- Responsive UI with TailwindCSS
+
+## 🧠 Technical Notes
+- Zustand used for simple and scalable state management
+- Axios used for consistency in API calls
+
+## 🔮 Future Improvements
+- Add authentication
+- Save notes persistently using backend storage
+- Pagination and filtering
+- Add unit & integration testing
+- TypeScript migration if time allows
